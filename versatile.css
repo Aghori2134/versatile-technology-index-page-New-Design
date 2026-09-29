@@ -1,0 +1,86 @@
+html{
+	scroll-behavior: smooth;
+}
+.anm{
+	animation:flow 3s linear infinite 1s;
+}
+@keyframes flow{
+	from{
+		transform:scale(0.99);
+	}
+	50%{
+		transform:scale(1.2);
+	}
+	to{
+		transform:scale(0.99);
+	}
+}
+.text{
+	animation:appear 1s linear;
+}
+@keyframes appear{
+	from{
+		opacity:0;
+		transform:scale(0.9);
+	}
+	to{
+		opacity:1;
+		transform:scale(1);
+	}
+}
+.vds{
+	animation:move 2s linear infinite 1s;
+}
+@keyframes move{
+	from{
+		transform:rotate(10deg);
+	}
+	50%{
+		transform:rotate(-10deg);
+	}
+	to{
+		transform:rotate(10deg);
+	}
+}
+.text2{
+	animation:scrolll linear;
+	animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+@keyframes scrolll{
+	from{
+		opacity:0;
+	}
+	to{
+		opacity:1;
+	}
+}
+.cards{
+	animation:cards linear;
+	animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+@keyframes cards{
+	from{
+		opacity:0.4;
+		transform:scale(0.8);
+	}
+	to{
+		opacity:1;
+		transform:scale(1);
+	}
+}
+.cards2{
+	animation:cards2 linear;
+	animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+@keyframes cards2{
+	from{
+		opacity:0.4;
+		transform:scale(1.1);
+	}
+	to{
+		opacity:1;
+		transform:scale(1);
+	
